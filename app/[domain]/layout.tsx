@@ -5,7 +5,6 @@ import CTA from "@/components/cta";
 import ReportAbuse from "@/components/report-abuse";
 import { notFound, redirect } from "next/navigation";
 import { getSiteData } from "@/lib/fetchers";
-import { fontMapper } from "@/styles/fonts";
 import { Metadata } from "next/types";
 import { fontMapper } from "@/styles/fonts";
 
