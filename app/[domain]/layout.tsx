@@ -100,7 +100,7 @@ export default async function SiteLayout({
               />
             </div>
             <span className="ml-3 inline-block truncate font-title font-medium">
-              {data.name}
+              {data.name || "Default Name"}
             </span>
           </Link>
         </div>
@@ -115,5 +115,5 @@ export default async function SiteLayout({
         <ReportAbuse />
       )}
     </div>
-  );
+  ) : null;
 }
