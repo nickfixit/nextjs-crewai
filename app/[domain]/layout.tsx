@@ -3,8 +3,6 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { getSiteData } from "@/lib/api"; // Adjust the import path as necessary
-import { notFound, redirect } from "next/navigation";
-import { getSiteData } from "@/lib/api"; // Adjust the import path as necessary
 
 // Define fontMapper if it's not already defined
 const fontMapper: { [key: string]: string } = {
