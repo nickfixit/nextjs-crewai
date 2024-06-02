@@ -3,6 +3,9 @@ import { PrismaClient } from '@prisma/client/edge';
 // const { PrismaClient } = require('@prisma/client/edge'); // CommonJS syntax
 // const prisma = new (await import('@prisma/client/edge')).PrismaClient(); // Dynamic import
 
+// Deploying your app to serverless or edge functions? 
+// Use the edge-optimized Prisma Client as shown above.
+
 const prisma = new PrismaClient();
 
 async function main() {
