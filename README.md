@@ -1,6 +1,6 @@
 <a href="https://app.vercel.pub">
-  <img alt="Platforms Starter Kit" src="/public/thumbnail.png">
-  <h1 align="center">Platforms Starter Kit</h1>
+  <img alt="Elitebench Platforms Starter Kit" src="/public/thumbnail.png">
+  <h1 align="center">Elitebench Platforms Starter Kit</h1>
 </a>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Introduction
 
-The [Platforms Starter Kit](https://app.vercel.pub/) is a full-stack Next.js app with multi-tenancy and custom domain support. Built with [Next.js App Router](https://nextjs.org/docs/app), [Vercel Postgres](https://vercel.com/storage/postgres) and the [Vercel Domains API](https://vercel.com/docs/rest-api/endpoints#domains).
+The [Elitebench Platforms Starter Kit](https://app.vercel.pub/) is a full-stack Next.js app with multi-tenancy and custom domain support. Built with [Next.js App Router](https://nextjs.org/docs/app), [Vercel Postgres](https://vercel.com/storage/postgres) and the [Vercel Domains API](https://vercel.com/docs/rest-api/endpoints#domains).
 
 Here's a quick 30-second demo:
 
@@ -71,11 +71,11 @@ Users can also map custom domains to their `.hashnode.dev` subdomain:
 
 - [akoskm.com](https://akoskm.com/) → [akoskm.hashnode.dev](https://akoskm.hashnode.dev/)
 
-With the Platforms Starter Kit, you can offer unlimited custom domains at no extra cost to your customers as a premium feature, without having to worry about custom nameservers or configuring SSL certificates.
+With the Elitebench Starter Kit, you can offer unlimited custom domains at no extra cost to your customers as a premium feature, without having to worry about custom nameservers or configuring SSL certificates.
 
-## Examples of platforms
+## Examples of Elitebench
 
-Vercel customers like [Hashnode](https://vercel.com/customers/hashnode), [Super](https://super.so), and [Cal.com](https://cal.com) are building scalable platforms on top of Vercel and Next.js. There are multiple types of platforms you can build with this starter kit:
+Vercel customers like [Hashnode](https://vercel.com/customers/hashnode), [Super](https://super.so), and [Cal.com](https://cal.com) are building scalable Elitebench on top of Vercel and Next.js. There are multiple types of Elitebench Platforms you can build with this starter kit:
 
 ### 1. Content creation platforms
 

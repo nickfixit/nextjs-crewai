@@ -1,13 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "DEBUG=* prisma generate && DEBUG=* next dev",
-    "build": "DEBUG=* prisma generate && DEBUG=* prisma db push && DEBUG=* next build",
+    "dev": "prisma generate && next dev",
+    "build": "prisma generate && prisma db push && next build",
     "format:write": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
     "format": "prettier \"**/*.{css,js,json,jsx,ts,tsx}\"",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "vercel --prod"
+    "lint": "next lint"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
