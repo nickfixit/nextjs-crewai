@@ -13,28 +13,19 @@ export async function generateMetadata({
   params: { domain: string };
 }): Promise<Metadata | null> {
   const domain = decodeURIComponent(params.domain);
-  const data: {
-    name: string;
+  const data = await getSiteData(domain) as {
+    name: string | null;
     description: string;
     image: string;
     logo: string;
     font: string;
     customDomain?: string;
-  } | null = await getSiteData(domain);
+  } | null;
   if (!data) {
     return null;
   }
-  const {
-    name: title,
-    description,
-    image,
-    logo,
-  } = data as {
-    name: string;
-    description: string;
-    image: string;
-    logo: string;
-  };
+  const title = data?.name ?? "Default Title";
+  const { description, image, logo } = data;
 
   return {
     title,
