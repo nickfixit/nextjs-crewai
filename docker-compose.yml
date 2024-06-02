@@ -1,0 +1,1 @@
+version: '3.8'\nservices:\n  backend:\n    image: python:3.9-slim\n    working_dir: /app\n    volumes:\n      - ./crewai_be:/app\n    ports:\n      - '5000:5000'\n    command: python api.py\n\n  frontend:\n    image: node:14\n    working_dir: /app\n    volumes:\n      - ./nextjs_app:/app\n    ports:\n      - '3000:3000'\n    command: |\n      sh -c "npm install && npm run dev"
