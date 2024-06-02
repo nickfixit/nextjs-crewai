@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+import { notFound, redirect } from "next/navigation";
+import { getSiteData } from "@/lib/api"; // Adjust the import path as necessary
 
 // Define fontMapper if it's not already defined
 const fontMapper: { [key: string]: string } = {
@@ -80,7 +82,7 @@ export default async function SiteLayout({
     return redirect(`https://${data.customDomain}`);
   }
 
-  return data ? (
+  return (
     <div className={fontMapper[data.font] || fontMapper.default}>
       <div className="ease left-0 right-0 top-0 z-30 flex h-16 bg-white transition-all duration-150 dark:bg-black dark:text-white">
         <div className="mx-auto flex h-full max-w-screen-xl items-center justify-center space-x-5 px-10 sm:px-20">
@@ -109,5 +111,5 @@ export default async function SiteLayout({
         <ReportAbuse />
       )}
     </div>
-  ) : null;
+  );
 }
