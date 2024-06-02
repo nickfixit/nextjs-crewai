@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { notFound, redirect } from "next/navigation";
-import { getSiteData } from "@/lib/fetchers";
-import { Metadata } from "next/types";
 
 // Define fontMapper if it's not already defined
 const fontMapper: { [key: string]: string } = {
