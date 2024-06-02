@@ -6,7 +6,6 @@ import ReportAbuse from "@/components/report-abuse";
 import { notFound, redirect } from "next/navigation";
 import { getSiteData } from "@/lib/fetchers";
 import { Metadata } from "next/types";
-import { fontMapper } from "@/styles/fonts";
 
 export async function generateMetadata({
   params,
