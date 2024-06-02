@@ -1,4 +1,8 @@
 import { PrismaClient } from '@prisma/client/edge';
+// Alternative import methods:
+// const { PrismaClient } = require('@prisma/client/edge'); // CommonJS syntax
+// const prisma = new (await import('@prisma/client/edge')).PrismaClient(); // Dynamic import
+
 const prisma = new PrismaClient();
 
 async function main() {
