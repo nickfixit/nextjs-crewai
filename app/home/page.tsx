@@ -8,7 +8,7 @@ export default function HomePage() {
         width={512}
         height={512}
         src="/logo.png"
-        alt="Platforms on Vercel"
+        alt="Elitebench Platform"
         className="w-48"
       />
       <h1 className="text-white">
